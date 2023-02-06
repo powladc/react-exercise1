@@ -4,7 +4,6 @@ import { updateUser, getAllUsers, addUser, User } from "./services/users";
 import { users as data } from "./data/users";
 import { getPosts, getPostsByUser, getPostById, addPost, updatePostTitle, updatePostBody, updatePost, deletePostBy, deletePostsByUserId } from "./services/posts";
 
-//USERS
 updateUser(1, { email: "roger@77.com" });
 console.log(getAllUsers());
 const userInfo = new User(data.length + 1, "New User", "New Username", "newuseremail@gmail.com", {street: "New Street", suite: "New Suite", city: "New City", zip: 3000});
